@@ -1,0 +1,116 @@
+* {
+  font-family: 'Lato', sans-serif; }
+
+body {
+  height: 100%;
+  margin: auto; }
+
+.blue-lightgray {
+  background: #2A11F7;
+  color: #BDBDC0; }
+
+.yellow-blue {
+  background: #FFD90F;
+  color: #2A11F7; }
+
+.lightgray-red {
+  background: #BDBDC0;
+  color: #FC0F34; }
+
+.red-lightgray {
+  background: #FC0F34;
+  color: #BDBDC0; }
+
+.darkgray-yellow {
+  background: #4F4E57;
+  color: #FFD90F; }
+
+.container {
+  align-items: start;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem;
+  z-index: 0;
+  background: #4F4E57; }
+
+header span {
+  box-shadow: 0;
+  color: #BDBDC0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 3rem;
+  font-weight: 700;
+  justify-content: start;
+  padding: 1rem 2rem;
+  text-align: left;
+  text-shadow: black 0.05rem 0 0;
+  transition: box-shadow 0.5s 0s linear;
+  width: max-content; }
+  header span:hover {
+    color: #FFD90F;
+    cursor: pointer;
+    text-shadow: black 0.3rem 0.3rem 0.15rem; }
+
+.nav-menu-item {
+  align-items: center;
+  box-shadow: 0.125rem 0.25rem 0.5rem 0.025rem black;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 400;
+  height: 4rem;
+  justify-content: center;
+  padding: 1rem;
+  text-shadow: black 0.025rem 0 0; }
+
+.primary-nav {
+  box-shadow: 0.25rem 0.5rem 3rem 0.5rem #FC0F34;
+  height: auto;
+  padding: 1rem;
+  width: 100vw; }
+
+ul {
+  align-items: end;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0; }
+  ul li {
+    list-style-type: none;
+    margin: 0 0.5%; }
+    ul li:hover {
+      cursor: pointer;
+      box-shadow: 0.125rem 0.25rem 0.5rem 0.25rem #2A11F7; }
+
+@media (max-width: 600px) {
+  .container {
+    align-items: start;
+    background: #4F4E57;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 0; }
+
+  header span {
+    color: #FFD90F;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    justify-content: start;
+    margin: auto;
+    text-align: left;
+    text-shadow: black 0.15rem -0.3rem 0.15rem;
+    transition: color 1.5s 0 linear;
+    transition: text-shadow 0.5s 0.25s linear; }
+
+  ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0;
+    padding: 0;
+    transition: margin 0.5s 0.25s linear;
+    width: 100%; }
+    ul li {
+      list-style-type: none; } }
+
+/*# sourceMappingURL=output.css.map */
