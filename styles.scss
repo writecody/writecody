@@ -83,11 +83,22 @@ header span {
   text-shadow: black 0.025rem 0 0;
 }
 
-.primary-nav {
+nav, section {
+    height: auto;
+    padding: 1rem;
+    width: 100%;
+}
+
+.blue-section {
+  box-shadow: 0.25rem 0.5rem 3rem 0.5rem #2A11F7;
+}
+
+.red-section {
   box-shadow: 0.25rem 0.5rem 3rem 0.5rem #FC0F34;
-  height: auto;
-  padding: 1rem;
-  width: 100%;
+}
+
+.yellow-section {
+  box-shadow: 0.25rem 0.5rem 3rem 0.5rem #FFD90F;
 }
 
 ul {
