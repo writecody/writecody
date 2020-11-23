@@ -85,7 +85,40 @@ header a {
 }
 
 main {
-  padding: 2rem;
+  background: whitesmoke;
+  padding: 1rem 2rem;
+
+  h1 {
+    color: #8E3D4C;
+    font-size: 2rem;
+    font-weight: 700;
+
+    &.header--blue {
+      color: #423D66;
+    }
+  }
+
+  p, ul {
+    border: 0.125rem solid #4F4E57;
+    box-shadow: 0.125rem 0.25rem 0.125rem 0rem #8E3D4C;
+    color: #423D66;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin: 0 auto 1rem;
+    padding: 1rem;
+
+    &.card--blue {
+      box-shadow: 0.125rem 0.25rem 0.125rem 0rem #423D66;
+    }
+
+    li {
+      display: block;
+      line-height: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 nav, section {
@@ -106,7 +139,7 @@ nav, section {
   box-shadow: 0.25rem 0.5rem 3rem 0.5rem #FFD90F;
 }
 
-ul {
+nav ul {
   display: flex;
   justify-content: start;
   margin: 1rem 0;
@@ -162,7 +195,7 @@ ul {
     width: 100%;
   }
 
-  ul {
+  nav ul {
     display: grid;
     grid-template-columns: 50% 50%;
     margin: 0;

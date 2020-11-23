@@ -68,7 +68,30 @@ header a {
     transition: text-shadow 0.25s 0.15s ease-in-out; }
 
 main {
-  padding: 2rem; }
+  background: whitesmoke;
+  padding: 1rem 2rem; }
+  main h1 {
+    color: #8E3D4C;
+    font-size: 2rem;
+    font-weight: 700; }
+    main h1.header--blue {
+      color: #423D66; }
+  main p, main ul {
+    border: 0.125rem solid #4F4E57;
+    box-shadow: 0.125rem 0.25rem 0.125rem 0rem #8E3D4C;
+    color: #423D66;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin: 0 auto 1rem;
+    padding: 1rem; }
+    main p.card--blue, main ul.card--blue {
+      box-shadow: 0.125rem 0.25rem 0.125rem 0rem #423D66; }
+    main p li, main ul li {
+      display: block;
+      line-height: 1.5rem;
+      margin-bottom: 1rem; }
 
 nav, section {
   height: auto;
@@ -84,19 +107,19 @@ nav, section {
 .yellow-section {
   box-shadow: 0.25rem 0.5rem 3rem 0.5rem #FFD90F; }
 
-ul {
+nav ul {
   display: flex;
   justify-content: start;
   margin: 1rem 0;
   padding-left: 2rem; }
-  ul li {
+  nav ul li {
     list-style-type: none;
     margin: 0 0.75%; }
-    ul li:hover {
+    nav ul li:hover {
       box-shadow: 0.125rem 0.25rem 0.5rem 0.25rem #BDBDC0; }
-      ul li:hover a {
+      nav ul li:hover a {
         color: whitesmoke; }
-    ul li a {
+    nav ul li a {
       text-decoration: none;
       color: #BDBDC0; }
 
@@ -127,14 +150,14 @@ ul {
     padding: 1rem 1rem 2rem;
     width: 100%; }
 
-  ul {
+  nav ul {
     display: grid;
     grid-template-columns: 50% 50%;
     margin: 0;
     padding: 0;
     transition: margin 0.5s 0.25s linear;
     width: 100%; }
-    ul li {
+    nav ul li {
       list-style-type: none; } }
 
 /*# sourceMappingURL=output.css.map */
