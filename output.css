@@ -6,24 +6,34 @@ body {
   margin: auto; }
 
 .blue-lightgray {
-  background: #2A11F7;
+  background: #423D66;
   color: #BDBDC0; }
 
-.yellow-blue {
-  background: #FFD90F;
-  color: #2A11F7; }
+.yellow-lightgray {
+  background: #66603D;
+  color: #BDBDC0; }
 
 .lightgray-red {
   background: #BDBDC0;
-  color: #FC0F34; }
+  color: #8E3D4C; }
 
 .red-lightgray {
-  background: #FC0F34;
+  background: #8E3D4C;
   color: #BDBDC0; }
 
 .darkgray-yellow {
   background: #4F4E57;
-  color: #FFD90F; }
+  color: #66603D; }
+
+.button {
+  align-items: center;
+  box-shadow: 0.125rem 0.25rem 0.5rem 0.025rem black;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 400;
+  justify-content: center;
+  padding: 1rem 2rem;
+  text-shadow: black 0.025rem 0 0; }
 
 .container {
   align-items: start;
@@ -34,7 +44,7 @@ body {
   z-index: 0;
   background: #4F4E57; }
 
-header span {
+header a {
   box-shadow: 0;
   color: #BDBDC0;
   display: flex;
@@ -45,27 +55,20 @@ header span {
   justify-content: start;
   padding: 1rem 2rem;
   text-align: left;
+  text-decoration: none;
   text-shadow: black 0.05rem 0 0;
   transition: color 0s 0s ease-in-out;
   transition: text-shadow 0.15s 0.15s ease-in-out;
   width: max-content; }
-  header span:hover {
-    color: #FFD90F;
+  header a:hover {
+    color: whitesmoke;
     cursor: pointer;
     text-shadow: black 0.3rem 0.3rem 0.15rem;
     transition: color 0.25s 0.15s ease-in-out;
     transition: text-shadow 0.25s 0.15s ease-in-out; }
 
-.button {
-  align-items: center;
-  box-shadow: 0.125rem 0.25rem 0.5rem 0.025rem black;
-  display: flex;
-  font-size: 1.5rem;
-  font-weight: 400;
-  height: 4rem;
-  justify-content: center;
-  padding: 1rem 2rem;
-  text-shadow: black 0.025rem 0 0; }
+main {
+  padding: 2rem; }
 
 nav, section {
   height: auto;
@@ -73,7 +76,7 @@ nav, section {
   width: 100%; }
 
 .blue-section {
-  box-shadow: 0.25rem 0.5rem 3rem 0.5rem #2A11F7; }
+  box-shadow: 0.25rem 0.5rem 3rem 0.5rem #423D66; }
 
 .red-section {
   box-shadow: 0.25rem 0.5rem 3rem 0.5rem #FC0F34; }
@@ -90,10 +93,14 @@ ul {
     list-style-type: none;
     margin: 0 0.75%; }
     ul li:hover {
-      cursor: pointer;
-      box-shadow: 0.125rem 0.25rem 0.5rem 0.25rem #2A11F7; }
+      box-shadow: 0.125rem 0.25rem 0.5rem 0.25rem #BDBDC0; }
+      ul li:hover a {
+        color: whitesmoke; }
+    ul li a {
+      text-decoration: none;
+      color: #BDBDC0; }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .container {
     align-items: start;
     background: #4F4E57;
@@ -103,7 +110,7 @@ ul {
     z-index: 0; }
 
   header span {
-    color: #FFD90F;
+    color: whitesmoke;
     display: flex;
     align-items: center;
     font-size: 3rem;
@@ -115,7 +122,7 @@ ul {
     transition: text-shadow 0.5s 0.25s linear; }
 
   .primary-nav {
-    box-shadow: 0.25rem 0.5rem 3rem 0.5rem #FC0F34;
+    box-shadow: 0.25rem 0.5rem 3rem 0.5rem #8f3d4c;
     height: auto;
     padding: 1rem 1rem 2rem;
     width: 100%; }
