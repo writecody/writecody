@@ -1,6 +1,6 @@
 // COLORS:
 // FULL: #FFD90F, #BDBDC0,#2A11F7
-// 40% 40%: #8E3D4C, #66603D, #4F4E57
+// 40% 40%: #8E3D4C, #66603D, #4F4E57, #3D6654
 * {
   font-family: 'Lato', sans-serif;
 }
@@ -10,32 +10,6 @@ body {
   margin: auto;
 }
 
-// INSIDE-OUT COLOR CLASSES
-.blue-lightgray {
-  background: #423D66;
-  color: #BDBDC0;
-}
-
-.yellow-lightgray {
-  background: #66603D;
-  color: #BDBDC0;
-}
-
-.lightgray-red {
-  background: #BDBDC0;
-  color: #8E3D4C;
-}
-
-.red-lightgray {
-  background: #8E3D4C;
-  color: #BDBDC0;
-}
-
-.darkgray-yellow {
-  background: #4F4E57;
-  color: #66603D;
-}
-
 .button {
   align-items: center;
   box-shadow: 0.125rem 0.25rem 0.5rem 0.025rem black;
@@ -43,11 +17,13 @@ body {
   font-size: 1.5rem;
   font-weight: 400;
   justify-content: center;
-  padding: 1rem 2rem;
   text-shadow: black 0.025rem 0 0;
+
+  a {
+    padding: 1rem 2rem;
+  }
 }
 
-// SELECTORS
 .container {
   align-items: start;
   display: flex;
@@ -86,7 +62,7 @@ header a {
 
 main {
   background: whitesmoke;
-  padding: 1rem 2rem;
+  padding: 2rem;
 
   h1 {
     color: #8E3D4C;
@@ -96,11 +72,14 @@ main {
     &.header--blue {
       color: #423D66;
     }
+
+    &.header--green {
+      color: #3D6654;
+    }
   }
 
   div.content, ul {
     border: 0.125rem solid #4F4E57;
-    box-shadow: 0.125rem 0.25rem 0.125rem 0rem #8E3D4C;
     color: #423D66;
     display: flex;
     flex-direction: column;
@@ -112,10 +91,19 @@ main {
       box-shadow: 0.125rem 0.25rem 0.125rem 0rem #423D66;
     }
 
+    &.card--green {
+      box-shadow: 0.125rem 0.25rem 0.125rem 0rem #3D6654;
+    }
+
     li {
-      display: block;
-      line-height: 1.5rem;
-      margin-bottom: 1rem;
+      display: flex;
+      line-height: 2rem;
+      margin-bottom: 2rem;
+      word-break: break-word;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -128,6 +116,10 @@ nav, section {
 
 .blue-section {
   box-shadow: 0.25rem 0.5rem 3rem 0.5rem #423D66;
+}
+
+.green-section {
+  box-shadow: 0.25rem 0.5rem 3rem 0.5rem #3D6654;
 }
 
 .red-section {
@@ -159,9 +151,13 @@ nav ul {
     a {
       text-decoration: none;
       color: #BDBDC0;
-
     }
   }
+}
+
+svg {
+  margin-right: 1rem;
+  min-width: 36px;
 }
 
 @media(max-width:768px) {
@@ -204,5 +200,13 @@ nav ul {
     li {
       list-style-type: none;
     }
+  }
+
+  span {
+    display: block;
+  }
+
+  main ul li {
+    display: block;
   }
 }

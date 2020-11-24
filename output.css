@@ -5,26 +5,6 @@ body {
   height: 100%;
   margin: auto; }
 
-.blue-lightgray {
-  background: #423D66;
-  color: #BDBDC0; }
-
-.yellow-lightgray {
-  background: #66603D;
-  color: #BDBDC0; }
-
-.lightgray-red {
-  background: #BDBDC0;
-  color: #8E3D4C; }
-
-.red-lightgray {
-  background: #8E3D4C;
-  color: #BDBDC0; }
-
-.darkgray-yellow {
-  background: #4F4E57;
-  color: #66603D; }
-
 .button {
   align-items: center;
   box-shadow: 0.125rem 0.25rem 0.5rem 0.025rem black;
@@ -32,8 +12,9 @@ body {
   font-size: 1.5rem;
   font-weight: 400;
   justify-content: center;
-  padding: 1rem 2rem;
   text-shadow: black 0.025rem 0 0; }
+  .button a {
+    padding: 1rem 2rem; }
 
 .container {
   align-items: start;
@@ -69,16 +50,17 @@ header a {
 
 main {
   background: whitesmoke;
-  padding: 1rem 2rem; }
+  padding: 2rem; }
   main h1 {
     color: #8E3D4C;
     font-size: 2rem;
     font-weight: 700; }
     main h1.header--blue {
       color: #423D66; }
+    main h1.header--green {
+      color: #3D6654; }
   main div.content, main ul {
     border: 0.125rem solid #4F4E57;
-    box-shadow: 0.125rem 0.25rem 0.125rem 0rem #8E3D4C;
     color: #423D66;
     display: flex;
     flex-direction: column;
@@ -87,10 +69,15 @@ main {
     padding: 2rem 1rem; }
     main div.content.card--blue, main ul.card--blue {
       box-shadow: 0.125rem 0.25rem 0.125rem 0rem #423D66; }
+    main div.content.card--green, main ul.card--green {
+      box-shadow: 0.125rem 0.25rem 0.125rem 0rem #3D6654; }
     main div.content li, main ul li {
-      display: block;
-      line-height: 1.5rem;
-      margin-bottom: 1rem; }
+      display: flex;
+      line-height: 2rem;
+      margin-bottom: 2rem;
+      word-break: break-word; }
+      main div.content li:last-of-type, main ul li:last-of-type {
+        margin-bottom: 0; }
 
 nav, section {
   height: auto;
@@ -99,6 +86,9 @@ nav, section {
 
 .blue-section {
   box-shadow: 0.25rem 0.5rem 3rem 0.5rem #423D66; }
+
+.green-section {
+  box-shadow: 0.25rem 0.5rem 3rem 0.5rem #3D6654; }
 
 .red-section {
   box-shadow: 0.25rem 0.5rem 3rem 0.5rem #FC0F34; }
@@ -121,6 +111,10 @@ nav ul {
     nav ul li a {
       text-decoration: none;
       color: #BDBDC0; }
+
+svg {
+  margin-right: 1rem;
+  min-width: 36px; }
 
 @media (max-width: 768px) {
   .container {
@@ -156,6 +150,12 @@ nav ul {
     transition: margin 0.5s 0.25s linear;
     width: 100%; }
     nav ul li {
-      list-style-type: none; } }
+      list-style-type: none; }
+
+  span {
+    display: block; }
+
+  main ul li {
+    display: block; } }
 
 /*# sourceMappingURL=output.css.map */
