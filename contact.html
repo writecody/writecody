@@ -23,10 +23,19 @@
   <main>
     <h1 class="header--green">Contact</h1>
     <div class="content card--green">
-      <form id="contactForm">
-        <label for="name" aria-placeholder="Name">Your name:</label>
-        <input id="name" type="text">
-    </form>
+      <form
+        action="https://formspree.io/f/myybdkyj"
+        method="POST">
+        <label>
+          Your email:
+          <input type="text" name="_replyto">
+        </label>
+        <label>
+          Your message:
+          <textarea name="message"></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
     </div>
   </main>
 </body>
