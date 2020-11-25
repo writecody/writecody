@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="none">
   <title>writecody: Work</title>
   <link rel="stylesheet" href="./output.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
@@ -12,9 +13,7 @@
     <nav class="green-section">
       <header><a href="/writecody.html">writecody</a></header>
       <ul>
-        <li class="button">
-        <a href="/about.html">About</a>
-        </li>
+        <li class="button"><a href="/about.html">About</a></li>
         <li class="button"><a href="/work.html">Work</a></li>
         <li class="button"><a href="/links.html">Links</a></li>
         <li class="button"><a href="/contact.html">Contact</a></li>
@@ -22,8 +21,12 @@
     </nav>
   </div>
   <main>
+    <h1 class="header--green">Contact</h1>
     <div class="content card--green">
-      FORM
+      <form id="contactForm">
+        <label for="name" aria-placeholder="Name">Your name:</label>
+        <input id="name" type="text">
+    </form>
     </div>
   </main>
 </body>

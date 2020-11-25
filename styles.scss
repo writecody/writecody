@@ -1,13 +1,18 @@
 // COLORS:
 // FULL: #FFD90F, #BDBDC0,#2A11F7
 // 40% 40%: #8E3D4C, #66603D, #4F4E57, #3D6654
+html {
+  height: 100%;
+}
+
 * {
   font-family: 'Lato', sans-serif;
 }
 
 body {
+  background: whitesmoke;
   height: 100%;
-  margin: auto;
+  margin: 0;
 }
 
 .button {
@@ -61,8 +66,7 @@ header a {
 }
 
 main {
-  background: whitesmoke;
-  padding: 2rem;
+  padding: 1rem 2rem 2rem;
 
   h1 {
     color: #8E3D4C;
@@ -183,7 +187,6 @@ svg {
   }
 
   .primary-nav {
-    box-shadow: 0.25rem 0.5rem 3rem 0.5rem #8f3d4c;
     height: auto;
     padding: 1rem 1rem 2rem;
     width: 100%;
